@@ -8,12 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let rustGreetings = RustGreetings()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        let resultWord = rustGreetings.sayHello(to: "YUMEMI")
+        print(resultWord)
     }
-
-
 }
 
