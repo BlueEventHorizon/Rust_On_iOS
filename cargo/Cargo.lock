@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "greetings"
+name = "RustLib"
 version = "0.1.1"

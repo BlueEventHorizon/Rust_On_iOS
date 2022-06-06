@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5293541D284CF5EF007F3A11 /* librust.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A9207D284CF4FD008C240D /* librust.a */; };
 		76CA17CD27BE444600F6E2D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA17CC27BE444600F6E2D0 /* AppDelegate.swift */; };
 		76CA17CF27BE444600F6E2D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA17CE27BE444600F6E2D0 /* SceneDelegate.swift */; };
 		76CA17D127BE444600F6E2D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA17D027BE444600F6E2D0 /* ViewController.swift */; };
@@ -14,10 +15,11 @@
 		76CA17D627BE444700F6E2D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76CA17D527BE444700F6E2D0 /* Assets.xcassets */; };
 		76CA17D927BE444700F6E2D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76CA17D727BE444700F6E2D0 /* LaunchScreen.storyboard */; };
 		76CA17E127BE480900F6E2D0 /* RustGreetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA17E027BE480900F6E2D0 /* RustGreetings.swift */; };
-		76CA17E927BE5F1500F6E2D0 /* libgreetings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76CA17E827BE5F0B00F6E2D0 /* libgreetings.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52A9207A284CF4D2008C240D /* LibRust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibRust.h; sourceTree = "<group>"; };
+		52A9207D284CF4FD008C240D /* librust.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librust.a; path = RusrGreeting/LibRust/librust.a; sourceTree = "<group>"; };
 		76CA17C927BE444600F6E2D0 /* RusrGreeting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RusrGreeting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76CA17CC27BE444600F6E2D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76CA17CE27BE444600F6E2D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,9 +30,6 @@
 		76CA17DA27BE444700F6E2D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76CA17E027BE480900F6E2D0 /* RustGreetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustGreetings.swift; sourceTree = "<group>"; };
 		76CA17E227BE491100F6E2D0 /* RustGreetings-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RustGreetings-Bridging-Header.h"; sourceTree = "<group>"; };
-		76CA17E427BE5C3000F6E2D0 /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = ../../cargo/target/universal/release/libgreetings.a; sourceTree = "<group>"; };
-		76CA17E627BE5CC100F6E2D0 /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = "../../cargo/target/x86_64-apple-ios/release/libgreetings.a"; sourceTree = "<group>"; };
-		76CA17E827BE5F0B00F6E2D0 /* libgreetings.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgreetings.a; path = ../libgreetings.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,13 +37,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76CA17E927BE5F1500F6E2D0 /* libgreetings.a in Frameworks */,
+				5293541D284CF5EF007F3A11 /* librust.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52A92079284CF4D2008C240D /* LibRust */ = {
+			isa = PBXGroup;
+			children = (
+				52A9207A284CF4D2008C240D /* LibRust.h */,
+			);
+			path = LibRust;
+			sourceTree = "<group>";
+		};
 		76CA17C027BE444600F6E2D0 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +79,7 @@
 				76CA17D527BE444700F6E2D0 /* Assets.xcassets */,
 				76CA17D727BE444700F6E2D0 /* LaunchScreen.storyboard */,
 				76CA17DA27BE444700F6E2D0 /* Info.plist */,
+				52A92079284CF4D2008C240D /* LibRust */,
 				76CA17E027BE480900F6E2D0 /* RustGreetings.swift */,
 				76CA17E227BE491100F6E2D0 /* RustGreetings-Bridging-Header.h */,
 			);
@@ -81,9 +89,7 @@
 		76CA17E327BE5C3000F6E2D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76CA17E827BE5F0B00F6E2D0 /* libgreetings.a */,
-				76CA17E627BE5CC100F6E2D0 /* libgreetings.a */,
-				76CA17E427BE5C3000F6E2D0 /* libgreetings.a */,
+				52A9207D284CF4FD008C240D /* librust.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -324,7 +330,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = ../;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/RusrGreeting/LibRust";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.example.RusrGreeting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,7 +361,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = ../;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/RusrGreeting/LibRust";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beowulf-tech.example.RusrGreeting";
 				PRODUCT_NAME = "$(TARGET_NAME)";

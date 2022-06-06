@@ -1,6 +1,6 @@
 //
 //  RustGreetings.swift
-//  RusrGreeting
+//  RustGreeting
 //
 //  Created by Katsuhiko Terada on 2022/02/17.
 //
